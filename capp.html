@@ -3,6 +3,24 @@
     <center>
     <body>
         <h1>Yolo Taxi</h1>
+        <table>
+            <tr>
+                <th>Pickup Location</th>
+                <th>Destination</th>
+            </tr>
+            <tr>
+                <td>
+                    <input class ="locationlist" id="pickup" list="shoplist" placeholder="Select Location" onclick="displaylist()"><br>
+                    <datalist id="place">
+                    </datalist>
+                </td>
+                <td>
+                    <input class ="locationlist" id="destination" list="shoplist" placeholder="Select Location" onclick="displaylist()"><br>
+                    <datalist id="place">
+                    </datalist>
+                </td>
+            </tr>
+        </table>
     </body>
     <script src="capp.js"></script>
     </center>

@@ -1,9 +1,25 @@
 body {
-   background-color: violet;
+   background-color: rgb(241, 74, 241);
    padding-top: 20px;
 }
 h1{
-    background-color: antiquewhite;
+    background-color: white;
     width: 200px;
     border-radius: 10px;
+    color: rgb(23, 23, 112);
+}
+th{
+    font-size: 25;
+    color: white;
+}
+td{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+#pickup,#destination{
+    height: 30px;
+    border-radius: 15px;
+    color:rgb(23, 23, 112) ;
 }

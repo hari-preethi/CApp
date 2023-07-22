@@ -1,0 +1,1 @@
+const place = ["Guindy","Central","Besant Nagar"]
