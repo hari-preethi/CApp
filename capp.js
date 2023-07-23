@@ -72,10 +72,15 @@ function book()
     {
         dist=1156.04;
     }
-    var fare = dist*10;
+    var fare = dist*5;
     
 
     localStorage.setItem("pup",pup);
+    localStorage.setItem("dest",dest);
+    localStorage.setItem("date",date);
+    localStorage.setItem("time",time);
+    localStorage.setItem("dist",dist);
+    localStorage.setItem("fare",fare);
     window.location.href="book.html";
     
     

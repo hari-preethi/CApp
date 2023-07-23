@@ -23,7 +23,7 @@
             border-radius: 15px;
             color:rgb(23, 23, 112) ;
             text-align: center;
-            width: 200px;
+            width: 80px;
             font-size: 20;
         }
 
@@ -34,6 +34,7 @@
     </head>
     <body>
         <h1>Yolo Flights</h1>
+        <p id="res"></p>
         <table>
             <tr>
                 <td>Pick Up Location</td>
@@ -64,11 +65,13 @@
         <input type="button" onclick="window.print()" value="Print" id="print">
     </body>
     <script>
-        window.onload()
-        {
-            const pup = localStorage.getItem("pup");
-            document.getElementById("pupreceipt").innerText=pup;
-        }
+        
+        document.getElementById("pupreceipt").innerHTML=localStorage.getItem("pup");
+        document.getElementById("destreceipt").innerHTML=localStorage.getItem("dest");
+        document.getElementById("datereceipt").innerHTML=localStorage.getItem("date");
+        document.getElementById("timereceipt").innerHTML=localStorage.getItem("time")+" hrs";
+        document.getElementById("distreceipt").innerHTML=localStorage.getItem("dist")+" km";
+        document.getElementById("farereceipt").innerHTML="Rs "+localStorage.getItem("fare");
     </script>
 </center>
 </html>

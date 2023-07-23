@@ -6,6 +6,7 @@
         </header>
     <body>
         <h1>Yolo Flights</h1>
+        <form method="GET" action="book.html">
         <table>
             <tr>
                 <th>Pickup Location</th>
@@ -13,12 +14,12 @@
             </tr>
             <tr>
                 <td>
-                    <input class ="locationlist" id="pickup" list="place" placeholder="Select Location" onclick="displaylist()"><br>
+                    <input id="pickup" list="place" placeholder="Select Location" onclick="displaylist()"><br>
                     <datalist id="place">
                     </datalist>
                 </td>
                 <td>
-                    <input class ="locationlist" id="destination" list="place1" placeholder="Select Location" onclick="displaylist1()"><br>
+                    <input id="destination" list="place1" placeholder="Select Location" onclick="displaylist1()"><br>
                     <datalist id="place1">
                     </datalist>
                 </td>
@@ -32,8 +33,9 @@
                 <td><input type="time" id="timeinp"></td>
             </tr>
         </table>
+        </form>
         <br><br>
-        <input type="button" value="Book" id="book" onclick="book()">
+        <input type="submit" value="Book" id="book" onclick="book()">
         <br><br>
         <div id="bookpg"></div>
     </body>
