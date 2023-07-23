@@ -71,7 +71,7 @@
         document.getElementById("datereceipt").innerHTML=localStorage.getItem("date");
         document.getElementById("timereceipt").innerHTML=localStorage.getItem("time")+" hrs";
         document.getElementById("distreceipt").innerHTML=localStorage.getItem("dist")+" km";
-        document.getElementById("farereceipt").innerHTML="Rs "+localStorage.getItem("fare");
+        document.getElementById("farereceipt").innerHTML="Rs "+Math.round(localStorage.getItem("fare")).toFixed(2) ;
     </script>
 </center>
 </html>
