@@ -5,7 +5,6 @@ body {
 h1{
     background-color: white;
     width: 200px;
-    border-radius: 10px;
     color: rgb(23, 23, 112);
     font-size: 45;
 }
@@ -13,6 +12,7 @@ h1{
 table{
     border: 2px solid white;
     padding: 20px;
+    background-image: linear-gradient(rgb(243, 76, 243),rgb(121, 123, 231));
 }
 
 th{

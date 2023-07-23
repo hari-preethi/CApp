@@ -1,4 +1,4 @@
-const place = ["London","Paris","Sydney","Tokyo","New York","Rome","Washington DC","Beijing","Seoul","Bangkok"];
+const place = ["London","Paris","Tokyo","Rome","Seoul"];
 
 function displaylist()
 {
@@ -29,37 +29,38 @@ function book()
     {
         dist=342.74;
     }
-    else if((pup==="London" && dest==="Sydney")||(pup==="Sydney" && dest==="London"))
-    {
-        dist=16994.33;
-    }
     else if((pup==="London" && dest==="Tokyo")||(pup==="Tokyo" && dest==="London"))
     {
         dist=9561.70;
-    }
-    else if((pup==="London" && dest==="New York")||(pup==="New York" && dest==="London"))
-    {
-        dist=5570.64;
     }
     else if((pup==="London" && dest==="Rome")||(pup==="Rome" && dest==="London"))
     {
         dist=1434.12;
     }
-    else if((pup==="London" && dest==="Washington DC")||(pup==="Washington DC" && dest==="London"))
-    {
-        dist=5897.96;
-    }
-    else if((pup==="London" && dest==="Beijing")||(pup==="Beijing" && dest==="London"))
-    {
-        dist=8138.09;
-    }
     else if((pup==="London" && dest==="Seoul")||(pup==="Seoul" && dest==="London"))
     {
         dist=8858.61;
     }
-    else if((pup==="London" && dest==="Bangkok")||(pup==="Bangkok" && dest==="London"))
+    else if((pup==="Paris" && dest==="Tokyo")||(pup==="Tokyo" && dest==="Paris"))
     {
-        dist=9532.18;
+        dist=8858.61;
     }
+    else if((pup==="Paris" && dest==="Rome")||(pup==="Rome" && dest==="Paris"))
+    {
+        dist=8858.61;
+    }
+    else if((pup==="Paris" && dest==="Seoul")||(pup==="Seoul" && dest==="Paris"))
+    {
+        dist=8858.61;
+    }
+    else if((pup==="Tokyo" && dest==="Rome")||(pup==="Rome" && dest==="Tokyo"))
+    {
+        dist=8858.61;
+    }
+    else if((pup==="Tokyo" && dest==="Seoul")||(pup==="Seoul" && dest==="Tokyo"))
+    {
+        dist=8858.61;
+    }
+    
     document.getElementById("distance").innerHTML=dist;
 }
