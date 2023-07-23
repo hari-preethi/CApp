@@ -1,1 +1,1 @@
-const place = ["Guindy","Central","Besant Nagar"]
+const place = ["London","Paris","Sydney","Tokyo"];
