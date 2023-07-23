@@ -73,12 +73,10 @@ function book()
         dist=1156.04;
     }
     var fare = dist*10;
-    document.getElementById("bookpg").innerHTML='<a href="book.html" id="printrpt">Print</a>';
-    document.getElementById("pupreceipt").innerText=pup;
-    document.getElementById("destreceipt").innerText=dest;
-    document.getElementById("datereceipt").innerText=date;
-    document.getElementById("timereceipt").innerText=time;
     
+
+    localStorage.setItem("pup",pup);
+    window.location.href="book.html";
     
     
 }
