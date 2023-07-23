@@ -10,17 +10,28 @@
             </tr>
             <tr>
                 <td>
-                    <input class ="locationlist" id="pickup" list="shoplist" placeholder="Select Location" onclick="displaylist()"><br>
+                    <input class ="locationlist" id="pickup" list="place" placeholder="Select Location" onclick="displaylist()"><br>
                     <datalist id="place">
                     </datalist>
                 </td>
                 <td>
-                    <input class ="locationlist" id="destination" list="shoplist" placeholder="Select Location" onclick="displaylist()"><br>
-                    <datalist id="place2">
+                    <input class ="locationlist" id="destination" list="place1" placeholder="Select Location" onclick="displaylist1()"><br>
+                    <datalist id="place1">
                     </datalist>
                 </td>
             </tr>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td><input type="date" id="dateinp"></td>
+                <td><input type="time" id="timeinp"></td>
+            </tr>
         </table>
+        <br><br>
+        <input type="button" value="Book" id="book" onclick="book()">
+        <p id="distance"></p>
     </body>
     <script src="capp.js"></script>
     </center>
