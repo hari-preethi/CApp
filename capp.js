@@ -33,7 +33,8 @@ function book()
 {
     pup=document.getElementById("pickup").value;
     dest=document.getElementById("destination").value;
-    var fair=0.0;
+    date=document.getElementById("dateinp").value;
+    time=document.getElementById("timeinp").value
     dist=0.0;
     if((pup==="London" && dest==="Paris")||(pup==="Paris" && dest==="London"))
     {
@@ -71,6 +72,13 @@ function book()
     {
         dist=1156.04;
     }
+    var fare = dist*10;
+    document.getElementById("bookpg").innerHTML='<a href="book.html" id="printrpt">Print</a>';
+    document.getElementById("pupreceipt").innerText=pup;
+    document.getElementById("destreceipt").innerText=dest;
+    document.getElementById("datereceipt").innerText=date;
+    document.getElementById("timereceipt").innerText=time;
     
-    document.getElementById("distance").innerHTML=dist;
+    
+    
 }

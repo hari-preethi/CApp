@@ -1,0 +1,53 @@
+<html>
+    <style>
+        table{
+            padding: 20px;
+        }
+        td{
+            border: 2px solid black;
+            padding: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: left;
+            width:170px;
+            font-size: 20;
+        }
+
+    </style>
+<center>
+    <head>
+        <title>Yolo Flights</title>
+    </head>
+    <body>
+        <h1>Yolo Flights</h1>
+        <table>
+            <tr>
+                <td>Pick Up Location</td>
+                <td id="pupreceipt"></td>
+            </tr>
+            <tr>
+                <td>Destination</td>
+                <td id="destreceipt"></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td id="datereceipt"></td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td id="timereceipt"></td>
+            </tr>
+            <tr>
+                <td>Distance</td>
+                <td id="distreceipt"></td>
+            </tr>
+            <tr>
+                <td>Fare</td>
+                <td id="farereceipt"></td>
+            </tr>
+        </table>
+        <input type="button" onclick="window.print()" value="Print">
+    </body>
+    <script src="capp.js"></script>
+</center>
+</html>

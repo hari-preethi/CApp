@@ -33,3 +33,9 @@ td{
     width: 200px;
     font-size: 20;
 }
+#printrpt{
+    color:rgb(23, 23, 112) ;
+    font-size: 20;
+    border-radius: 15px;
+    width:max-content;
+}
