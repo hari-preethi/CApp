@@ -3,18 +3,28 @@ const place = ["London","Paris","Tokyo","Rome","Seoul"];
 function displaylist()
 {
     var str='';
+    pup=document.getElementById("pickup").value;
+    dest=document.getElementById("destination").value;
     for (var i=0; i < place.length;i++)
     {
-        str += '<option value="'+place[i]+'"></option>';
+        if(place[i]===dest){}
+        else{
+            str += '<option value="'+place[i]+'"></option>';
+        }
     }
     document.getElementById("place").innerHTML = str;
 }
 function displaylist1()
 {
     var str='';
+    pup=document.getElementById("pickup").value;
+    dest=document.getElementById("destination").value;
     for (var i=0; i < place.length;i++)
     {
-        str += '<option value="'+place[i]+'"></option>';
+        if(place[i]===pup){}
+        else{
+            str += '<option value="'+place[i]+'"></option>';
+        }
     }
     document.getElementById("place1").innerHTML = str;
 }
@@ -43,23 +53,23 @@ function book()
     }
     else if((pup==="Paris" && dest==="Tokyo")||(pup==="Tokyo" && dest==="Paris"))
     {
-        dist=8858.61;
+        dist=9714.68;
     }
     else if((pup==="Paris" && dest==="Rome")||(pup==="Rome" && dest==="Paris"))
     {
-        dist=8858.61;
+        dist=1106.27;
     }
     else if((pup==="Paris" && dest==="Seoul")||(pup==="Seoul" && dest==="Paris"))
     {
-        dist=8858.61;
+        dist=8966.56;
     }
     else if((pup==="Tokyo" && dest==="Rome")||(pup==="Rome" && dest==="Tokyo"))
     {
-        dist=8858.61;
+        dist=9857.88;
     }
     else if((pup==="Tokyo" && dest==="Seoul")||(pup==="Seoul" && dest==="Tokyo"))
     {
-        dist=8858.61;
+        dist=1156.04;
     }
     
     document.getElementById("distance").innerHTML=dist;
